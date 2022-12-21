@@ -1,27 +1,31 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Home } from './pages';
+import { Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from './components/navbar';
 import CartWidget from './components/cartWidget';
 import ItemListContainer from './components/itemListContainer';
+import Router from './router';
+import './App.css';
 
-function App() {
+const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const onHandlerClick = () => {
     setIsOpen(!isOpen);
   }
   return (
-    <div className="App">
-      <Navbar>
-        <CartWidget onHandlerClick={onHandlerClick} />
-      </Navbar>
-      <ItemListContainer onClose={onHandlerClick} isOpen={isOpen}>
-        <h5>Item List</h5>
-      </ItemListContainer>
+    <div className='contenedor'>
+    <Navbar>
+      <CartWidget onHandlerClick={onHandlerClick} />
+    </Navbar>
+    <ItemListContainer onClose={onHandlerClick} isOpen={isOpen}>
+      <div className='cart-container'>
+        <Link to='/cart' className='button-cart'>Ir al carrito</Link>
+      </div>
+    </ItemListContainer>
+    <Router />
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,14 +1,15 @@
 import React from "react";
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
     return (
         <ul>
-            <li><a href="#">Brand Logo</a></li>
-            <li><a href="#">Categoría 1</a></li>
-            <li><a href="#">Categoría 2</a></li>
-            <li><a href="#">Categoría 3</a></li>
-            <li><a href="#">Categoría 4</a></li>
+            <li><Link to='/'>Brand Logo</Link></li>
+            <li><Link to='/category/1'>Categoría 1</Link></li>
+            <li><Link to='/category/2'>Categoría 2</Link></li>
+            <li><Link to='/category/3'>Categoría 3</Link></li>
+            <li><Link to='/category/4'>Categoría 4</Link></li>
             {props.children}
         </ul>
     )

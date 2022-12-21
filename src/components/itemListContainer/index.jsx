@@ -10,7 +10,7 @@ const ItemListContainer = ({children, onClose, isOpen}) => {
         }}
         >
             <div className="close-button-container">
-                <button onClick={onClose} className="close-button"><i class="bi bi-x"></i></button>
+                <button onClick={onClose} className="close-button"><i className="bi bi-x"></i></button>
             </div>
             {children}
         </div>
