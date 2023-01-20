@@ -1,7 +1,9 @@
-.contenedor {
+.contenedor-detalle {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    background-color: '#F3ECFE';
+    width: 100%;
+    background-color: #F3ECFE;
 }

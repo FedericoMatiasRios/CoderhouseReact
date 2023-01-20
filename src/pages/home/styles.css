@@ -1,9 +1,10 @@
-.contenedor {
+.contenedor-home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: '#F3ECFE';
+    height: max-content;
+    width: 100%;
+    background-color: #F3ECFE;
 }
 
 .products-container {
@@ -15,3 +16,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.products-container, .contenedor h1 {
+    margin-top: 10vh;
+}
+
+.loading-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

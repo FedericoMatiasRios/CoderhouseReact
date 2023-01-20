@@ -2,7 +2,7 @@ import React from "react";
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-const Navbar = (props) => {
+const NavBar = (props) => {
     return (
         <ul>
             <li><Link to='/'>Brand Logo</Link></li>
@@ -15,4 +15,4 @@ const Navbar = (props) => {
     )
 }
 
-export default Navbar;
+export default NavBar;

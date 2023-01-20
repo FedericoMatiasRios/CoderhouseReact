@@ -9,18 +9,22 @@
 .button-cart {
   cursor: pointer;
   background-color: #f0f0f0;
-  padding: 1.2rem;
-  width: 100%; 
+  padding: 0.6rem;
+  width: 60%; 
   justify-content: center;
   align-items: center;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   color: #212121;
-  border-radius: 5px;
+  border-radius: 25px;
   transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  border:none;
+  box-shadow: 0 3px #888888;
 }
 .button-cart:hover {
-  background-color: crimson;
-  color: #fff;
+  box-shadow: unset;
+  margin-top: 3px;
+  color: crimson;
 }
