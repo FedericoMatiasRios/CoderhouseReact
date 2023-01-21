@@ -45,7 +45,7 @@ const Category = () =>  {
         </div>
         ) : (
             <>
-            <h1>Categoría {params.id}</h1>
+            <h1>{params.id}</h1>
             <div className='products-container'>
                 {products.filter(product => product.categoryId === params.id).map((product) => (
                 <ItemDetail product={product} key={product.name} onSelect={onHandlerSelect} />

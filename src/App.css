@@ -10,7 +10,7 @@
   cursor: pointer;
   background-color: #f0f0f0;
   padding: 0.6rem;
-  width: 60%; 
+  width: 100%; 
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -26,5 +26,5 @@
 .button-cart:hover {
   box-shadow: unset;
   margin-top: 3px;
-  color: crimson;
+  color: #27aae1;
 }

@@ -9,7 +9,7 @@
     margin: 0.5rem;
     padding: 1rem;
     max-width: 350px;
-    min-height: 680px;
+    min-height: 580px;
     max-height: 580px;
     transition: all 0.2s ease-in-out;
 }
@@ -24,9 +24,9 @@
     align-items: center;
     margin: 0.5rem;
     padding: 1rem;
-    max-width: 1200px;
+    max-width: 800px;
     width: 80%;
-    min-height: 200px;
+    min-height: 300px;
     max-height: 580px;
     transition: all 0.2s ease-in-out;
 }
@@ -39,7 +39,8 @@
     display: flex;
     flex: 0.25;
     max-width: 300px;
-    max-height: 300px;
+    max-height: 200px;
+    min-height: 200px;
 }
 .card-content {
     display: flex;

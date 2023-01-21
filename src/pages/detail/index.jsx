@@ -91,7 +91,15 @@ const ItemDetailContainer = () =>  {
                 decreaseQty = {onDecreaseItem}
                 increaseQty = {onIncreaseItem}
                 numberOfItem = {getItemQuantity(product?.id)}/>
-            ) : <Link to="/" className="button-cart">Ir al inicio</Link>}
+            ) : (
+                <div className="contenedor-error">
+                    <h2>&nbsp;&nbsp;&nbsp;El artículo no existe...</h2>
+                    <br />
+                    <div className="button-container">
+                        <Link to="/" className="button-cart">Buscar productos</Link>
+                    </div>
+                </div>
+            )}
             </>
         )}
     </div>

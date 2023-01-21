@@ -1,15 +1,16 @@
 import React from "react";
 import './styles.css';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png'
 
 const NavBar = (props) => {
     return (
         <ul>
-            <li><Link to='/'>Brand Logo</Link></li>
-            <li><Link to='/category/1'>Categoría 1</Link></li>
-            <li><Link to='/category/2'>Categoría 2</Link></li>
-            <li><Link to='/category/3'>Categoría 3</Link></li>
-            <li><Link to='/category/4'>Categoría 4</Link></li>
+            <li><Link to='/'><img src={logo} width="200" alt="" /></Link></li>
+            <li><Link to='/category/samsung'>Samsung</Link></li>
+            <li><Link to='/category/xiaomi'>Xiaomi</Link></li>
+            <li><Link to='/category/motorola'>Motorola</Link></li>
+            <li><Link to='/category/apple'>Apple</Link></li>
             {props.children}
         </ul>
     )

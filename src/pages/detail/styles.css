@@ -5,5 +5,12 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-color: #F3ECFE;
+    background-color: rgb(240, 240, 240);
+}
+
+.contenedor-error {
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
 }

@@ -1,4 +1,5 @@
-import {  getFirestore, collection, getDocs, query, where, limit, addDoc} from 'firebase/firestore';
+import {  getFirestore, collection, getDocs, query, where, addDoc} from 'firebase/firestore';
+import Swal from "sweetalert2";
 
 export const firebaseServices = {
     getProducts: () => {
@@ -69,8 +70,18 @@ export const firebaseServices = {
         const db = getFirestore();
         const orderCollection = collection(db, 'orders');
         return addDoc(orderCollection, order)
-            .then((docRef) => {
-                console.log('Document written with ID: ', docRef.id);
+            .then((docRef) => {                
+                Swal.fire({
+                    title: '¡Gracias por su compra!',
+                    icon: 'success',
+                    html:
+                    'Su n° de orden es: <b>' + docRef.id +'</b>',
+                    showCloseButton: false,
+                    showCancelButton: false,
+                    focusConfirm: false,
+                    confirmButtonText: 'Ok',
+                })
+                  
                 return docRef.id;
             })
             .catch((error) => {

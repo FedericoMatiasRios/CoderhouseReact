@@ -17,7 +17,7 @@ const ItemListContainer = ({children, onClose, isOpen}) => {
                 <button onClick={onClose} className="close-button"><i className="bi bi-x"></i></button>
             </div>
             {cart.length === 0 ? (
-                <p className='empty-cart'>Carrito vacío...</p>
+                <p className='empty-cart'>El carrito está vacío...</p>
                 ) : (
                     cart.map((item) => (
                         <CartItem key={item.id} {...item} onRemoveItem={onRemoveItem} />
@@ -25,7 +25,7 @@ const ItemListContainer = ({children, onClose, isOpen}) => {
                 ))}
                 
             <p>Total:</p>
-            <h2>${total}</h2>
+            <center><h4>${total}</h4></center>
 
             <div className='cart-container'>
                 <Link to='/cart' className='button-cart'>Ver carrito</Link>

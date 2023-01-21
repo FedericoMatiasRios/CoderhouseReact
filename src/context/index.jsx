@@ -14,7 +14,6 @@ export const CartContext = createContext(initialState);
 
 export const CartProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
-    const [categories, setCategories] = useState([]);
     const [cart, setCart] = useState([]);
 
     const onDecreaseItem = (id) => {
